@@ -1,0 +1,67 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+</head>
+<body>
+
+    <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+
+
+    <div w3-include-html="navbar.html"></div>
+    <script>
+        w3IncludeHTML();
+        </script>
+    <!--                /.navbar           -->
+
+    <h1 class="titre-contact">
+        Me contacter : 
+    </h1>
+
+
+    <div class="row">
+        <div class="column">
+            <form method="POST" name="contactform" action="contact-form-handler.php">
+                <input type="text" name="name" placeholder="Nom" class="name" required />
+                <input type="email" name="email" placeholder="Adresse mail" class="email" required />
+            <textarea rows="4" cols="50" name="message" placeholder="Message" class="message" required></textarea>
+            <input name="submit" class="btn" type="submit" value="Envoyer" />
+        </form>
+        </div>
+        <div class="column">
+            <div class="contact-block raise">
+    
+                                <a href="mailto:clement.maroy@gmail.com">clement.maroy@gmail.com</a>
+                                <br>
+                                <br>    
+                                <div class="socialMedia">
+            
+                                 <a href="https://www.linkedin.com/in/cl%C3%A9ment-maroy-780116220" target="_blank">
+                                    <img alt="LinkedIn-Logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                                    width="150" height=>
+                                 </a>
+            
+                               
+                                </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <script language="JavaScript">
+        var frmvalidator  = new Validator("contactform");
+        frmvalidator.addValidation("name","req","Please provide your name");
+        frmvalidator.addValidation("email","req","Please provide your email");
+        frmvalidator.addValidation("email","email",
+          "Please enter a valid email address");
+        </script>
+        
+        
+        
+
+</body>
+</html>

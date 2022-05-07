@@ -1,0 +1,468 @@
+body {
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #161a1f;
+  color: #eeeeee;
+}
+
+/* Add a black background color to the top navigation */
+#topnav {
+  background-color: #06070d;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+#topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+#topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+#topnav a.active {
+  background-color: #00e59b;
+  color: #06070d;
+}
+
+.bienvenue-index {
+  text-align: center;
+}
+.clement-etudiant {
+  /* text-align: center;
+  background-color: black;
+  border: 2px solid #eeee; */
+  margin-right: 35%;
+  margin-left: 35%;
+}
+
+.clement-etudiant-texte {
+}
+
+.titre-contact {
+  text-align: center;
+}
+
+.titre-bts-sio {
+  text-align: center;
+}
+
+.titre-projets {
+  text-align: center;
+}
+
+.titre-profil {
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Boutton */
+
+button {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;
+  box-shadow: inset 0 0 0 2px #ffffff;
+  color: #ffffff;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+}
+button::before,
+button::after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bouton-index {
+  margin-left: 43%;
+}
+
+.draw {
+  transition: color 0.25s;
+  /* position: fixed;
+  left: 45%; */
+}
+.draw::before,
+.draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: #00e59b;
+}
+.draw:hover::before,
+.draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  border-top-color: #00e59b;
+  border-right-color: #00e59b;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: #00e59b;
+  border-left-color: #00e59b;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+}
+
+/* center tout */
+
+.centered {
+  margin-top: 19%;
+}
+
+body > div > a {
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #161a1f;
+  color: #eeeeee;
+}
+
+.contact-block {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 29px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 343px;
+  height: 333px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+textarea {
+  background: rgba(255, 255, 255, 0.4)
+    url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px;
+  width: 276px;
+  height: 110px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 45px;
+  padding-right: 20px;
+  padding-top: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+input {
+  width: 276px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input.name {
+  background: rgba(255, 255, 255, 0.4)
+    url(http://luismruiz.com/img/gemicon_name.png) no-repeat scroll 16px 16px;
+  padding-left: 45px;
+}
+
+input.email {
+  background: rgba(255, 255, 255, 0.4)
+    url(http://luismruiz.com/img/gemicon_email.png) no-repeat scroll 16px 20px;
+  padding-left: 45px;
+}
+
+input.message {
+  background: rgba(255, 255, 255, 0.4)
+    url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px;
+  padding-left: 45px;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+:-moz-placeholder {
+  color: #fff;
+}
+
+::-moz-placeholder {
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.btn {
+  width: 138px;
+  height: 44px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  float: right;
+  border: 1px solid #253737;
+  background: #416b68;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#6da5a3),
+    to(#416b68)
+  );
+  background: -webkit-linear-gradient(top, #6da5a3, #416b68);
+  background: -moz-linear-gradient(top, #6da5a3, #416b68);
+  background: -ms-linear-gradient(top, #6da5a3, #416b68);
+  background: -o-linear-gradient(top, #6da5a3, #416b68);
+  background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+  padding: 10.5px 21px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0,
+    inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0,
+    inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0,
+    inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  text-shadow: #333333 0 1px 0;
+  color: #e1e1e1;
+}
+
+.btn:hover {
+  border: 1px solid #253737;
+  text-shadow: #333333 0 1px 0;
+  background: #416b68;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#77b2b0),
+    to(#416b68)
+  );
+  background: -webkit-linear-gradient(top, #77b2b0, #416b68);
+  background: -moz-linear-gradient(top, #77b2b0, #416b68);
+  background: -ms-linear-gradient(top, #77b2b0, #416b68);
+  background: -o-linear-gradient(top, #77b2b0, #416b68);
+  background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+  color: #fff;
+}
+
+.btn:active {
+  margin-top: 1px;
+  text-shadow: #333333 0 -1px 0;
+  border: 1px solid #253737;
+  background: #6da5a3;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#416b68),
+    to(#416b68)
+  );
+  background: -webkit-linear-gradient(top, #416b68, #609391);
+  background: -moz-linear-gradient(top, #416b68, #6da5a3);
+  background: -ms-linear-gradient(top, #416b68, #6da5a3);
+  background: -o-linear-gradient(top, #416b68, #6da5a3);
+  background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
+  color: #fff;
+  -webkit-box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
+    inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  -moz-box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
+    inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
+    inset rgba(255, 255, 255, 0.7) 0 1px 0;
+}
+
+.sisr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 29px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.slam {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 29px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+p {
+  text-align: justify;
+}
+
+.profil-presentation {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 29px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+a:any-link {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:any-link:hover {
+  text-decoration: underline;
+}
+
+.bloc-centre {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  padding: 29px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.veille-box {
+  display: flex;
+}
