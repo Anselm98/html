@@ -1,55 +1,354 @@
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    
-    
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
-
-<style>
-   /* body{ background-image: url("images/AjarJaggedClumber-size_restricted.gif");
-} */
-
-</style>    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Portfolio Clément MAROY</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css'>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<div id='stars'></div>
-<div id='stars2'></div>
-<div id='stars3'></div>
-<!-- star background -->
+  <!-- partial:index.partial.html -->
+  <!-- Header Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-
-    <!-- <div class="computer-background">  -->
-
-    <!-- <div w3-include-html="navbar.html" style="opacity: 0%; " ></div>   -->
-    <script>
-        w3IncludeHTML();
-        </script>
-    <!--                /.navbar           -->
-       <div class="centered">
-            <h1 class="bienvenue-index" >Bienvenue sur mon portfolio.</h1>
-    
-            <div class="clement-etudiant">
-    
-            <h2 class="clement-etudiant-texte">Je suis <span style="color: purple;">Clément Maroy</span>, étudiant en BTS SIO option SISR</h2>
-            </div>
+  <header id="header">
+    <div class="main_nav">
+      <div class="container">
+        <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+        <nav>
+          <ul>
+            <li><a class="smoothscroll" href="#header">Home</a></li>
+            <li><a class="smoothscroll" href="#about">Profil</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Experience professionnelle</a></li>
+            <li><a class="smoothscroll" href="#skills">Projets</a></li>
+            <li><a class="smoothscroll" href="#veille">Veille Technologique</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="title">
+      <div><span class="typcn typcn-device-desktop icon heading"></span></div>
+      <div class="smallsep heading"></div>
+      <h1 class="heading"> Bienvenue sur mon site</h1>
+      <h2 class="heading">Je suis Clément MAROY, étudiant en BTS SIO option SISR</h2>
+      <a class="smoothscroll" href="#about">
+        <div class="mouse">
+          <div class="wheel"></div>
         </div>
-            <!--Bouton  -->
-    
-            <div class="bouton-index"><a href="profil.html"><button class="draw">En savoir plus</button></div></a>
-    
+      </a>
+    </div>
+    <a class="smoothscroll" href="#about">
+      <div class="scroll-down"></div>
+    </a>
+  </header>
 
-       </p>   
+  <!-- About Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <h1>À propos de moi</h1>
+        <div class="block"></div>
+        <p>Bienvenue sur mon site ! Je suis Clément Maroy, étudiant en première année de BTS SIO à l’école IPSSI de
+          Saint-Quentin en Yvelines. Ancien professeur d’anglais, j’ai fait le choix en 2021 de me reconvertir dans
+          l’informatique, domaine qui m’a toujours passionné et dans lequel je prends aujourd’hui beaucoup de plaisir à
+          évoluer. Sur ce site, vous pourrez visualiser les différents projets personnels et professionnels sur lesquels
+          j’ai travaillé. N’hésitez pas à me contacter avec le formulaire à votre disposition dans la section contact si
+          vous avez la moindre question. Bonne visite !</p>
+      </div>
+
+
+      <a href="docs/maroy-clement-cv.pdf">
+        <h3 style="text-align:center ;"><span class="typcn typcn-pen icon"></span>Mon CV</h3>
+      </a>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Le BTS SIO
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <h1>Le BTS SIO</h1>
+        <div class="block"></div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <h3><span class="typcn typcn-code-outline icon"></span>SLAM</h3>
+          <p>L'otpion SLAM (Solutions Logicielles et Applications Métier) est destinée aux étudiants voulant s'orienter
+            vers la conception, le développement, ainsi que le déploiement et la maintenance des composants logiciels
+            d'une solution applicative. L'étudiant acquiert ainsi des compétences en conception et développement d'une
+            solution applicative, en maintenance de celle-ci, mais aussi en bases de données et en gestion des données
+            numériques. </p>
+        </div>
+        <div class="six columns">
+          <h3><span class="typcn typcn-wi-fi icon"></span>SISR</h3>
+          <p>L’option SISR (Solutions d’infrastructure, systèmes et réseaux) est destinée aux étudiants qui s’orientent
+            vers les métiers liés à la conception et la maintenance d’infrastructures réseaux. Assurer la sécurité, la
+            maintenance et l’installation des réseaux et des équipements informatiques font partie des principales
+            missions des futurs administrateurs, techniciens ou pilotes d’exploitation. Comme pour l’autre option, des
+            cours plus généraux viendront compléter la formation et apporter des compétences plus généralistes,
+            permettant ainsi aux diplômés d’être opérationnels dans n’importe quelle entreprise. </p>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <!-- Portfolio Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <section id="portfolio">
+    <div class="container">
+      <h1>Experience professionnelle</h1>
+      <div class="block"></div>
+      <h3>stage du 09 mai 2022 au 19 juin 2022</h3>
+      <div style="text-align:center ;"> <a href="https://admantic.fr"><img src="images/admantic-logo.jpg"
+            alt="logo AdmanTIC" width="300"> </a> </div>
+      <p>
+        Admantic est une entreprise située au 25 rue du Gros Caillou aux Clayes sous-bois dans les Yvelines, Admantic
+        est une entreprise spécialiste de la gestion des infrastructures d’hébergement, l’infogérance et le DevOps dans
+        laquelle j'ai eu la chance d'effectuer deux mois de stage qui m'ont permis de gagner en autonomie et en
+        compétences. Admantic se démarque des entreprises concurrentes par des offres tournées vers la qualité et le
+        sur-mesure, en proposant par exemple des solutions d’optimisation adaptées aux projets de ses clients, tout en
+        offrant un support et un suivi 24 heures sur 24 et 7 jours sur 7.
+        Admantic utilise et propose à ses clients et fournisseurs des applications open-source qui correspondent à ses
+        valeurs de partage et de transparence.</p>
+        <div style="text-align:center ;"><a href="https://admantic.fr"> Cliquez ici </a> pour visiter le site internet
+          d'AdmanTIC</div>
+
+        
+
+    </div>
+  </section>
+
+  <!-- Skills Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<section id="skills">
+  <div class="container">
+    <h1>Mes projets</h1>
+    <div class="block"></div>
+    <p>Vous trouverez ici différents projets sur lesquels j'ai eu l'occasion de travailler lors de mon cursus, mon
+      apprentissage ou mon temps libre.</p>
+      <div style="text-align:center ;"><p><u><b>Pour accéder au tableau de synthèse de mes projets personnels et professionnels, je vous invite à <a href="docs/Tableau-Clement-Maroy.pdf">cliquer ici</b></u></a> </p></div> <br>
+
+    <div class="row">
+
+      <div class="one-third column" style="text-align:center ;">
+        <a href="projets/site_vitrine/html/produit.html">Developpement Web : Site Vitrine LEGO</a>
+        <a href="projets/site_vitrine/html/produit.html"><img src="images/page-vitrine.png" alt="Page Vitrine LEGO"
+            width="150"></a>
+      </div>
+
+      <div class="one-third column" style="text-align:center ;">
+        <a href="docs/maroy-debian-install.pdf">Installation et configuration Debian 11</a>
+        <a href="docs/maroy-debian-install.pdf">
+          <img src="images/dekstop-debian.PNG" alt="PDF Installation Debian" width="150"></a>
+      </div>
+
+      <div class="one-third column" style="text-align:center ;">
+        <a href="docs/configuration-dns-dhcp-windows-server.pdf">Configuration DNS et DHCP</a>
+        <a href="docs/configuration-dns-dhcp-windows-server.pdf">
+          <img src="images/windows-server.png" alt="logo GLPI" width="150"></a>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="one-third column" style="text-align:center ;">
+        <a href="docs/maroy-installation-GLPI.pdf">Installation et configuration GLPI</a>
+        <a href="docs/maroy-installation-GLPI.pdf">
+          <img src="images/glpi-logo.png" alt="logo GLPI" width="150"></a>
+      </div>
+
+      <div class="one-third column" style="text-align:center ;">
+        <a href="docs/gestion-inventaire-glpi.pdf">Gestion de l'inventaire avec GLPI</a>
+        <a href="docs/gestion-inventaire-glpi.pdf">
+          <img src="images/glpi-logo.png" alt="logo GLPI" width="150"></a>
+      </div>
+
+      <div class="one-third column" style="text-align:center ;">
+        <a href="docs/utilisation-basique-git.pdf">Utilisation basique de GIT</a>
+        <a href="docs/utilisation-basique-git.pdf">
+          <img src="images/logo-git.png" alt="logo GIT" width="150"></a>
+      </div>
+
+
+    </div>
+    <div class="row">
+
+      <div class="one-third column" style="text-align:center ;">
+        <a href="docs/PHPIPAM.pdf">Gestion réseaux PHPIPAM</a>
+        <a href="docs/PHPIPAM.pdf">
+          <img src="images/logo-phpipam.jpeg" alt="logo PHPIPAM" width="150"></a>
+      </div>
+
+      <div class="one-third column" style="text-align:center ;">
+        <a href="docs/conteneur-docker-ubuntu.pdf">Création d'un conteneur Ubuntu</a>
+        <a href="docs/conteneur-docker-ubuntu.pdf">
+          <img src="images/logo-docker.png" alt="logo Docker" width="150"></a>
+      </div>
+
+      <div class="one-third column" style="text-align:center ;">
+        <a href="docs/Kubernetes-wordpress.pdf">Déploiement Wordpress sur Kubernetes</a>
+        <a href="docs/Kubernetes-wordpress.pdf">
+          <img src="images/Kubernetes-logo.png" alt="logo Kubernetes" width="150"></a>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="one-third column" style="text-align:center ;">
+        <a href="docs/Support de niveau 1.pdf">Support de niveau 1</a>
+        <a href="docs/Support de niveau 1.pdf">
+          <img src="images/logo-redmine.png" alt="logo Redmine" width="150"></a>
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+  </div>
+</section>
+
+  <!-- Testimonials Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <section id="veille">
+    <div class="container">
+      <h1>Veille</h1>
+      <div class="block"></div>
+      <p>
+        <h3>Qu'est ce qu'une veille ?</h3>
+        La veille consiste à suivre de près l'actualité et les innovations ou les régressions dans un secteur d’activité donné. La veille comprend notamment la surveillance, la collecte, le partage et la diffusion d’information permettant d’anticiper ou de s’informer sur des changements en matière de recherche, développement, brevet, lancement de nouveaux produits our le côté technologique ou les lois, les choix des entreprises les changements dans les contrats pour la veille juridique. Cela a pour but d’évaluer l’impact sur l’environnement et l’organisation.
+
+        <h3>Ma veille juridique</h3>
+        Le sujet que j'ai choisi pour ma veille juridique est <u><b> Le respect de la vie privée des utilisateurs sur
+        internet </b></u> . C'est un sujet qui m'intéresse car les données des utilisateurs sont la principale monnaie d'echange des entreprises comme Facebook et Google aujourd'hui. Peu de gens s'en soucient mais c'est quelque chose qui commence à changer à la fois au niveau des lois et dans la mentalité des personnes. <br>
+
+        <h3>Ma veille technologique</h3>
+        Pour ma vielle technologique le sujet que j'ai choisi est <u><b>l'Internet of Things (IoT)</b></u> Aujourd'hui on a de plus en plus de nos appareils qui sont connectés, nos bouilloirs, nos balances, nos sonnettes d'alarmes et c'est un secteur en constante évolution qu'il m'interessait de suivre. <br> Pour faire cette vielle j'ai utilisé des
+        outils tels que Feedly et Google News. J'ai suivi des chaînes youtube spécialisés dans la sécurité
+        informatique tels que Network Chuck et Mental Outlaw J'ai également suivi des hashtags Twitter tels que #IOT, rejoins le subreddit IoT et me suis inscrit sur la newsletter de sites comme iottechnews.com </p>
+
+      <div class="row">
+        <div style="text-align:center ;">
+          <h2>Veille Juridique</h2>
+          <a
+            href="https://blog.mozilla.org/press-fr/2022/06/14/firefox-lance-la-protection-totale-contre-les-cookies-par-defaut-pour-ses-utilisateurs-et-utilisatrices-du-monde-entier/#:~:text=D%C3%A8s%20aujourd'hui%2C%20Firefox%20rend,disponible%20sur%20Mac%20et%20Windows.">
+            <h4><b>14/06/2022</b> <br> Firefox lance la Protection Totale contre les Cookies par défaut pour ses utilisateurs
+              et utilisatrices du monde entier</h4>
+          </a>
+          <a
+            href="https://blog.mozilla.org/press-fr/2022/06/14/firefox-lance-la-protection-totale-contre-les-cookies-par-defaut-pour-ses-utilisateurs-et-utilisatrices-du-monde-entier/#:~:text=D%C3%A8s%20aujourd'hui%2C%20Firefox%20rend,disponible%20sur%20Mac%20et%20Windows.">
+            <img src="images/total-cookie-protection.png" alt="protection cookies" width="500"></a>
+        </div>
+
+ </div>
+
+      <br> <br>
+      <div class="row">
+        <div style="text-align:center ;">
+          <h2>Veille Technologique</h2>
+          <a href="https://www.infoq.com/news/2022/06/aws-iot-expresslink/">
+            <h4><b>26/06/2022</b> <br> AWS Releases IoT ExpressLink: Cloud-Connectivity Software for Hardware Modules</h4>
+          </a>
+          <a href="https://www.infoq.com/news/2022/06/aws-iot-expresslink/">
+            <img src="images/aws-express-link.webp" alt="aws-express-link" width="500"></a>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="row">
+      <div style="text-align:center ;">
+        <a href="https://www.zdnet.fr/actualites/qualcomm-se-lance-sur-le-marche-de-la-robotique-avec-une-nouvelle-plateforme-39941995.htm">
+          <h4><b>13/05/2022</b> <br> Qualcomm se lance sur le marché de la robotique avec une nouvelle plateforme </h4>
+        </a>
+        <a href="https://www.zdnet.fr/actualites/qualcomm-se-lance-sur-le-marche-de-la-robotique-avec-une-nouvelle-plateforme-39941995.htm">
+          <img src="images/qualcomm-5G-Summit.jpeg" alt="Qualcomm-Robots" width="500"></a>
+      </div>
+
+    </div>
+
+    </div>
+    <div class="row">
+      <div style="text-align:center ;">
+        <a href="https://9to5google.com/2022/05/05/google-coral-asus/">
+          <h4><b>05/05/2022</b> <br> Google partners with Asus IoT to spread availability of Coral on-device AI hardware </h4>
+        </a>
+        <a href="https://9to5google.com/2022/05/05/google-coral-asus/">
+          <img src="images/Google-Coral-Asus.webp" alt="Asus-Coralk" width="500"></a>
+      </div>
+
+    </div>
+
+      </div>
+
+
+    </div>
+    </div>
+  </section>
+
+  <!-- Contact Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <section id="contact">
+    <div class="container">
+      <h1>Contact</h1>
+      <div class="block"></div>
+      <p>Pour toute question, je vous invite à me contacter par mail à l'adresse suivante : <a href="mailto:clement.maroy@gmail.com">clement.maroy@gmail.com</a> <br> <br> Vous pouvez également remplir le formulaire ci-dessous : </p>
+      <form>
+        <div class="row">
+          <div class="six columns">
+
+            <label for="exampleRecipientInput">Name</label>
+            <input class="u-full-width" type="text">
+          </div>
+          <div class="six columns">
+            <label for="exampleEmailInput">Email</label>
+            <input class="u-full-width" type="email">
+          </div>
+        </div>
+        <div class="row">
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width"></textarea>
+          <input class="button-primary" type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <footer>
+    <div class="container">
+      <div class="nine columns">
+        <p>Clement MAROY <a href="https://www.linkedin.com/in/cl%C3%A9ment-maroy-780116220/"><span
+              class="typcn typcn-social-linkedin-circular socialIcons"></span></a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+  <script src="./script.js"></script>
+
 </body>
 </html>
