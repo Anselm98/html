@@ -69,11 +69,15 @@ TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
 /* Show div
 ------------------------------------------------------ */
 
-function myFunction() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
+var button = document.getElementById('button');
+var div = document.getElementById('newpost');
+div.style.display = 'none'; // set display property to 'none' initially
+
+button.onclick = function() {
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
     }
-  }
+    else {
+        div.style.display = 'block';
+    }
+};
