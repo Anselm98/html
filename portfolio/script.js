@@ -64,20 +64,3 @@ jQuery(document).ready(function($) {
 
 
 TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
-
-/*----------------------------------------------------*/
-/* Show div
------------------------------------------------------- */
-
-var button = document.getElementById('button');
-var div = document.getElementById('newpost');
-div.style.display = 'none'; // set display property to 'none' initially
-
-button.onclick = function() {
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
-    }
-    else {
-        div.style.display = 'block';
-    }
-};
